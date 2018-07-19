@@ -17,15 +17,25 @@ Where is the head, unsure of the concept?
 $ git reset HEAD hello.rb
 undo's changes we had previously "add"ed to the github from the file (not yet committed)
 
-git checkout hello.rb 
+$ git checkout hello.rb 
 we revert the physical local file to the verison before changes were committed
 
-git revert HEAD
+$ git revert HEAD
 brings up this "editor" and you have fine control over the lines of committs made
 
-git reset --hard <previous tag>
+$ git reset --hard <previous tag>
 this resets the head, current version, to the revert to the previous tag
 
-git tag -d <tag name>
+$ git tag -d <tag name>
 removes the tag from history
 
+$ git commit --amend -m "name of commit"
+If you forgot to include a few changes and already commited some changes this adds those changes
+to the previous commit. Equivalent to resetting the branch back one commit and the commitign the new changes
+
+$ git mv hello.rb subdirectory/repository
+Moves our file to subdirectory equivalently :
+$ mkdir lib
+$ mv hello.rb lib
+$ git add lib/hello.rb
+$ git rm hello.rb

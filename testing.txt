@@ -17,6 +17,7 @@ Where is the head, unsure of the concept?
 $ git reset HEAD hello.rb
 undo's changes we had previously "add"ed to the github from the file (not yet committed)
 
+<<<<<<< HEAD
 $ git checkout hello.rb 
 we revert the physical local file to the verison before changes were committed
 
@@ -42,3 +43,9 @@ $ git rm hello.rb
 
 ?Why is it that we're asked to add aliases to the config file somewhere before lab 10
 and only until lab 22 are we introduced to where the git "stuff" is stored?
+=======
+git checkout hello.rb 
+we revert the physical local file to the verison before changes were committed
+
+
+>>>>>>> 1533e812fa1284715c0c6cfcaab967b372966344

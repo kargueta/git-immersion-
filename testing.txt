@@ -33,9 +33,12 @@ $ git commit --amend -m "name of commit"
 If you forgot to include a few changes and already commited some changes this adds those changes
 to the previous commit. Equivalent to resetting the branch back one commit and the commitign the new changes
 
-$ git mv hello.rb subdirectory/repository
+$ git mv hello.rb subdirectory|repository
 Moves our file to subdirectory equivalently :
 $ mkdir lib
 $ mv hello.rb lib
 $ git add lib/hello.rb
 $ git rm hello.rb
+
+?Why is it that we're asked to add aliases to the config file somewhere before lab 10
+and only until lab 22 are we introduced to where the git "stuff" is stored?

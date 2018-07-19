@@ -1,1 +1,31 @@
 Hello Everyone
+
+.profile commands not executing 
+gs must be conflicting with another program because ghost script comes on
+Otherwise receive message, bash command not found
+Terminal froze had to reload webpage and my hello.rb file disappeared terminal said 
+kevinalexanderargueta:~/workspace/git-immersion ((4158d1e...)) $ cat hello.rb
+cat: hello.rb: No such file or directory
+Recreated file in directory and didn’t know if it affected original on GitHub so pushed changes
+This time when I pressed cat hello.rb instead of getting “Hello, World” I was returned the exact lines of code in the file
+
+
+Still unsure what the checkout command does what it means when you’re in a ‘detached Head’ state or what a new branch is for a repository?
+Where is the head, unsure of the concept?
+“There’s no undo here, you can’t press a key that reverts changes made by the previous command”
+
+$ git reset HEAD hello.rb
+undo's changes we had previously "add"ed to the github from the file (not yet committed)
+
+git checkout hello.rb 
+we revert the physical local file to the verison before changes were committed
+
+git revert HEAD
+brings up this "editor" and you have fine control over the lines of committs made
+
+git reset --hard <previous tag>
+this resets the head, current version, to the revert to the previous tag
+
+git tag -d <tag name>
+removes the tag from history
+
